@@ -210,7 +210,7 @@
           }
         },
         {
-          "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" href=\"https://mobirise.com/mobirise-free-win.zip\" data-toolbar=\"-mbrBtnMove\">SERVICES</a> ",
+          "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" href=\"page1.html#header1-d\" data-toolbar=\"-mbrBtnMove\">SERVICES</a> ",
           "_tags": [
             "Theme"
           ],
