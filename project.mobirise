@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Allur Nail Spa of North Ridge",
-    "currentPage": "index.html",
+    "currentPage": "page3.html",
     "theme": {
       "name": "default",
       "title": "Mobirise",
@@ -2173,7 +2173,7 @@
           },
           "headerAlign": "center",
           "meta": "By John Smith posted July 30, 2015",
-          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">FLYER</a>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" href=\"assets/files/My Post (6).pdf\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">FLYER</a>",
           "_name": "msg-box4",
           "_anchor": "msg-box4-13"
         },
