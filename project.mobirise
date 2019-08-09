@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Allure Nail Spa of North Ridge",
-    "currentPage": "page3.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "default",
       "title": "Mobirise",
@@ -736,7 +736,7 @@
               "stateDetails": ""
             }
           },
-          "text1": "<b>ADDRESS<br>6132 Fall of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
+          "text1": "<b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
           "text2": "",
           "_tags": [
             "Theme"
@@ -1004,7 +1004,7 @@
             "showButtons": false,
             "paddingTop": "2",
             "paddingBottom": "2",
-            "columns": "4",
+            "columns": "5",
             "bgImageRadio": false,
             "bgImage": "@PROJECT_PATH@/assets/images/allur7-2000x1333.jpg",
             "parallax": true,
@@ -1122,7 +1122,7 @@
             }
           },
           "title5": "",
-          "caption5": "",
+          "caption5": "- Waxing -<br>Eyebrows $12\n<br>Lips $10\n<br>Chin $10\n<br>Full Face $40+\n<br>Under Arm$20+\n<br>Brazilian $45+\n<br>Bikini $25+\n<br>Half Arm $20\n<br>Full Arm $35\n<br>Half Leg $25\n<br>Full Leg $45\n<br>Back $50\n<br>Chest $30\n<br>Side Burns $15&nbsp;<br>",
           "button5": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>",
           "media6": {
             "image": {
@@ -1183,7 +1183,7 @@
               "stateDetails": ""
             }
           },
-          "text1": "<b>ADDRESS<br>6132 Fall of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
+          "text1": "<b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
           "text2": "",
           "_tags": [
             "Theme"
@@ -1425,7 +1425,7 @@
               "stateDetails": ""
             }
           },
-          "text1": "<b>ADDRESS<br>6132 Fall of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
+          "text1": "<b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
           "text2": "",
           "_tags": [
             "Theme"
@@ -1617,7 +1617,7 @@
               "stateDetails": ""
             }
           },
-          "text1": "<b>ADDRESS<br>6132 Fall of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
+          "text1": "<b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
           "text2": "",
           "_tags": [
             "Theme"
