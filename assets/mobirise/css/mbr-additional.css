@@ -4,6 +4,7 @@
 
 
 
+
 #ext_menu-0 .mbr-brand__name {
   font-size: 16px;
 }
@@ -349,10 +350,16 @@
 #contacts2-1 P {
   color: #ffffff;
 }
+#contacts2-1 DIV {
+  color: #ffffff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 19px;
+}
 #footer1-3 P {
   color: #ffffff;
   text-align: center;
 }
+
 
 
 
@@ -421,10 +428,16 @@
 #contacts2-b P {
   color: #ffffff;
 }
+#contacts2-b DIV {
+  color: #ffffff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 19px;
+}
 #footer1-c P {
   color: #ffffff;
   text-align: center;
 }
+
 
 #header4-k H1 {
   color: #6e0c43;
@@ -449,10 +462,16 @@
 #contacts2-h P {
   color: #ffffff;
 }
+#contacts2-h DIV {
+  color: #ffffff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 19px;
+}
 #footer1-i P {
   color: #ffffff;
   text-align: center;
 }
+
 
 #ext_menu-z .mbr-brand__name {
   font-size: 16px;
@@ -483,6 +502,11 @@
 }
 #contacts2-10 P {
   color: #ffffff;
+}
+#contacts2-10 DIV {
+  color: #ffffff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 19px;
 }
 #footer1-11 P {
   color: #ffffff;

@@ -22,7 +22,7 @@
     "cookiesAlert": "We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.",
     "gdpr": "",
     "siteUrl": "",
-    "uniqCompNum": 59,
+    "uniqCompNum": 16,
     "versionPublish": "4.10.7",
     "screenshot": "screenshot.png",
     "PWA": {
@@ -443,12 +443,12 @@
           "_name": "mbr-popup",
           "_customHTML": "<section class=\"popup-builder\" group=\"Popup\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Triggers / Show Popup</header>\n        <label>On Click</label>\n        <label>Use [popup-id] with any link or button (Link -&gt; Popup tab)</label>\n\n        <input type=\"checkbox\" title=\"On Timer\" name=\"onTimer\" checked>\n        <input type=\"range\" title=\"Delay (s)\" name=\"onTimerDelay\" min=\"0\" max=\"30\" step=\"1\" value=\"5\" condition=\"onTimer == true\">\n\n        <input type=\"checkbox\" title=\"On Page Exit\" name=\"onPageExit\">\n\n        <input type=\"checkbox\" title=\"On Scroll to End\" name=\"onScroll\">\n\n        <select title=\"Add to Pages:\" name=\"popupOnPages\" multiple condition=\"onTimer == true || onPageExit == true || onScroll == true\"></select>\n\n        <header>Content</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n\n        <select title=\"Content Type\" name=\"popupContentType\">\n            <option value=\"1\">None</option>\n            <option value=\"2\" selected>Image</option>\n            <option value=\"3\">Video</option>\n            <option value=\"4\">Form</option>\n        </select>\n\n        <select title=\"Size\" name=\"popupSize\">\n            <option value=\"1\" selected>Small</option>\n            <option value=\"2\">Default</option>\n            <option value=\"3\">Large</option>\n            <option value=\"4\">Extra large</option>\n        </select>\n\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <input type=\"color\" title=\"Background Color\" name=\"cardBg\" value=\"#ffffff\">\n\n        <header>Overlay</header>\n        <input type=\"color\" title=\"Color\" name=\"popupOverlayColor\" value=\"#000000\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': popupOverlayColor, 'top': 0, 'right': 0, 'bottom': 0, 'left': 0, 'position': absolute, 'z-index': 0, 'pointer-events': none}\">\n    </div>\n\n    <div class=\"modal mbr-popup\" tabindex=\"-1\" role=\"dialog\" data-overlay-color=\"{{popupOverlayColor}}\" data-overlay-opacity=\"{{overlayOpacity}}\" data-on-timer-delay=\"{{onTimer ? onTimerDelay : ''}}\" data-on-exit=\"{{onPageExit}}\" data-on-scroll=\"{{onScroll}}\">\n        <div class=\"modal-dialog\" role=\"document\" mbr-class=\"{\n            'modal-sm': popupSize == 1,\n            '': popupSize == 2,\n            'modal-lg': popupSize == 3,\n            'modal-xl': popupSize == 4\n            }\">\n            <div class=\"modal-content\">\n                <div class=\"modal-header\" mbr-class=\"{'pb-0': showTitle && showText}\">\n                    <h5 class=\"modal-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".modal-title\" mbr-if=\"showTitle\"></h5>\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                        <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 32 32\" fill=\"currentColor\">\n                            <path d=\"M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z\"></path>\n                        </svg>\n                    </button>\n                </div>\n\n                <div class=\"modal-body\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\"></p>\n\n                    <div mbr-if=\"popupContentType !== 1\">\n                        <div class=\"card-img mbr-figure\" mbr-if=\"popupContentType == 2\">\n                            <img src=\"@PROJECT_PATH@/assets/images/my-post-7-960x960.png\" alt=\"Mobirise\" title>\n                        </div>\n                            <div mbr-video class=\"video-block mbr-figure\" mbr-if=\"popupContentType == 3\">\n                                <iframe src=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\"></iframe>\n                            </div>\n\n                            <div mbr-form mbr-if=\"popupContentType == 4\" class=\"form-wrapper\">\n                                <form action name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                                    <div class=\"container\">\n                                        <div class=\"row\">\n                                            <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n                                            <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\"></div>\n                                        </div>\n                                        <div class=\"row form-content\">\n                                            <div class=\"col-md-4 form-group\" data-for=\"name\" hidden=\"hidden\">\n                                                <input type=\"text\" name=\"name\" placeholder=\"Name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\" hidden=\"hidden\">\n                                            </div>\n                                            <div class=\"col-md-4 form-group\" data-for=\"lastName\" hidden=\"hidden\">\n                                                <input type=\"text\" name=\"lastName\" placeholder=\"Last Name\" data-form-field=\"Last Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\" hidden=\"hidden\">\n                                            </div>\n                                            <div class=\"form-group col\" data-for=\"email\">\n                                                <input type=\"email\" name=\"email\" placeholder=\"Email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                                            </div>\n                                            <div class=\"col-md-auto input-group-btn\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\">\n                                                <a type=\"submit\" class=\"btn btn-primary\">SUBSCRIBE</a>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"modal-footer\" mbr-class=\"{'pt-0': popupContentType == 1 || popupContentType == 4}\" mbr-if=\"showButtons\">\n                        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"page3.html#msg-box4-13\" data-app-placeholder=\"Type Text\">\n                                LEARN MORE\n                            </a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n</section>",
           "_cid": "ryAzmJEOcy",
+          "_anchor": "mbr-popup-w",
+          "_popupId": "mbr-popup-w",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "mbr-popup-w",
-          "_popupId": "mbr-popup-w"
+          "_params": {}
         },
         {
           "_inherit": "msg-box3",
@@ -720,7 +720,7 @@
         {
           "_params": {
             "paddingTop": "1",
-            "paddingBottom": "1",
+            "paddingBottom": "2",
             "bgImageRadio": true,
             "bgImage": "@PROJECT_PATH@/assets/images/mbr-1920x1277.jpg",
             "parallax": true,
@@ -736,8 +736,8 @@
               "stateDetails": ""
             }
           },
-          "text1": "<b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
-          "text2": "",
+          "text1": "<p><b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098</b><br><br>&nbsp;<br></p>",
+          "text2": "<b>HOURS\n</b><div><b>Monday 9:30am – 7:30pm \n</b></div><div><b>Tuesday 9:30am – 7:30pm \n</b></div><div><b>Wednesday 9:30am – 7:30pm \n</b></div><div><b>Thursday 9:30am – 7:30pm \n</b></div><div><b>Friday 9:30am – 7:30pm \n</b></div><div><b>Saturday 9:30am – 7:30pm \n</b></div><div><b>Sunday 12:00pm – 6:00pm</b></div>",
           "_tags": [
             "Theme"
           ],
@@ -749,6 +749,12 @@
             },
             "P": {
               "color": "#ffffff"
+            },
+            "DIV": {
+              "color": "#ffffff",
+              "font-family": "'Yanone Kaffeesatz', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700",
+              "font-size": "19px"
             }
           }
         },
@@ -1122,7 +1128,7 @@
             }
           },
           "title5": "",
-          "caption5": "- Waxing -<br>Eyebrows $12\n<br>Lips $10\n<br>Chin $10\n<br>Full Face $40+\n<br>Under Arm$20+\n<br>Brazilian $45+\n<br>Bikini $25+\n<br>Half Arm $20\n<br>Full Arm $35\n<br>Half Leg $25\n<br>Full Leg $45\n<br>Back $50\n<br>Chest $30\n<br>Side Burns $15&nbsp;<br>",
+          "caption5": "- Waxing -<br>Eyebrows $12\n<br>Lips $10\n<br>Chin $10\n<br>Full Face $40+\n<br>Under Arm$20+\n<br>Brazilian $45+\n<br>Bikini $30up&nbsp;<br>Half Arm $20\n<br>Full Arm $50&nbsp;<br>Half Leg $35+<br>Full Leg $55<br>Back $50\n<br>Chest $45<br>Back and Chest $70<br>Side Burns $15&nbsp;<br>",
           "button5": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>",
           "media6": {
             "image": {
@@ -1167,7 +1173,7 @@
         {
           "_params": {
             "paddingTop": "1",
-            "paddingBottom": "1",
+            "paddingBottom": "2",
             "bgImageRadio": true,
             "bgImage": "@PROJECT_PATH@/assets/images/mbr-1920x1277.jpg",
             "parallax": true,
@@ -1183,8 +1189,8 @@
               "stateDetails": ""
             }
           },
-          "text1": "<b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
-          "text2": "",
+          "text1": "<p><b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098</b><br><br>&nbsp;<br></p>",
+          "text2": "<b>HOURS\n</b><div><b>Monday 9:30am – 7:30pm \n</b></div><div><b>Tuesday 9:30am – 7:30pm \n</b></div><div><b>Wednesday 9:30am – 7:30pm \n</b></div><div><b>Thursday 9:30am – 7:30pm \n</b></div><div><b>Friday 9:30am – 7:30pm \n</b></div><div><b>Saturday 9:30am – 7:30pm \n</b></div><div><b>Sunday 12:00pm – 6:00pm</b></div>",
           "_tags": [
             "Theme"
           ],
@@ -1195,6 +1201,12 @@
             },
             "P": {
               "color": "#ffffff"
+            },
+            "DIV": {
+              "color": "#ffffff",
+              "font-family": "'Yanone Kaffeesatz', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700",
+              "font-size": "19px"
             }
           },
           "_anchor": "contacts2-b"
@@ -1409,7 +1421,7 @@
         {
           "_params": {
             "paddingTop": "1",
-            "paddingBottom": "1",
+            "paddingBottom": "2",
             "bgImageRadio": true,
             "bgImage": "@PROJECT_PATH@/assets/images/mbr-1920x1277.jpg",
             "parallax": true,
@@ -1425,8 +1437,8 @@
               "stateDetails": ""
             }
           },
-          "text1": "<b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
-          "text2": "",
+          "text1": "<p><b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098</b><br><br>&nbsp;<br></p>",
+          "text2": "<b>HOURS\n</b><div><b>Monday 9:30am – 7:30pm \n</b></div><div><b>Tuesday 9:30am – 7:30pm \n</b></div><div><b>Wednesday 9:30am – 7:30pm \n</b></div><div><b>Thursday 9:30am – 7:30pm \n</b></div><div><b>Friday 9:30am – 7:30pm \n</b></div><div><b>Saturday 9:30am – 7:30pm \n</b></div><div><b>Sunday 12:00pm – 6:00pm</b></div>",
           "_tags": [
             "Theme"
           ],
@@ -1437,6 +1449,12 @@
             },
             "P": {
               "color": "#ffffff"
+            },
+            "DIV": {
+              "color": "#ffffff",
+              "font-family": "'Yanone Kaffeesatz', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700",
+              "font-size": "19px"
             }
           },
           "_anchor": "contacts2-h"
@@ -1601,7 +1619,7 @@
         {
           "_params": {
             "paddingTop": "1",
-            "paddingBottom": "1",
+            "paddingBottom": "2",
             "bgImageRadio": true,
             "bgImage": "@PROJECT_PATH@/assets/images/mbr-1920x1277.jpg",
             "parallax": true,
@@ -1617,8 +1635,8 @@
               "stateDetails": ""
             }
           },
-          "text1": "<b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098<br></b><br>",
-          "text2": "",
+          "text1": "<p><b>ADDRESS<br>6132 Falls of Neuse Rd</b><br><b>Raleigh, NC 27609<br><br>\nCONTACTS<br>\nPhone: +1 (919) 981 0098</b><br><br>&nbsp;<br></p>",
+          "text2": "<b>HOURS\n</b><div><b>Monday 9:30am – 7:30pm \n</b></div><div><b>Tuesday 9:30am – 7:30pm \n</b></div><div><b>Wednesday 9:30am – 7:30pm \n</b></div><div><b>Thursday 9:30am – 7:30pm \n</b></div><div><b>Friday 9:30am – 7:30pm \n</b></div><div><b>Saturday 9:30am – 7:30pm \n</b></div><div><b>Sunday 12:00pm – 6:00pm</b></div>",
           "_tags": [
             "Theme"
           ],
@@ -1629,6 +1647,12 @@
             },
             "P": {
               "color": "#ffffff"
+            },
+            "DIV": {
+              "color": "#ffffff",
+              "font-family": "'Yanone Kaffeesatz', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700",
+              "font-size": "19px"
             }
           },
           "_anchor": "contacts2-10"
